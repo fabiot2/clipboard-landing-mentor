@@ -1,0 +1,64 @@
+@mixin h1-preset {
+    font-size: $h1-head-size-mobile;
+    line-height: $h1-head-height-mobile;
+    font-weight:$h1-head-weight-mobile;
+    letter-spacing: $h1-head-spacing-mobile;
+
+    @media screen and (min-width:$Query-tablet) {
+        font-size: $h1-head-size-desktop;
+        line-height: $h1-head-height-desktop;
+        font-weight:$h1-head-weight-desktop;
+        letter-spacing: $h1-head-spacing-desktop;
+    }
+}
+
+
+@mixin h2-preset {
+    font-size: $h2-head-size-mobile;
+    line-height: $h2-head-height-mobile;
+    font-weight:$h2-head-weight-mobile;
+    letter-spacing: $h2-head-spacing-mobile;
+
+    @media screen and (min-width:$Query-tablet) {
+        font-size: $h2-head-size-desktop;
+        line-height: $h2-head-height-desktop;
+        font-weight:$h2-head-weight-desktop;
+        letter-spacing: $h2-head-spacing-desktop;
+    }
+}
+
+@mixin h3-preset {
+    font-size: $h3-head-size-mobile;
+    line-height: $h3-head-height-mobile;
+    font-weight:$h3-head-weight-mobile;
+    letter-spacing: $h3-head-spacing-mobile;
+
+    @media screen and (min-width:$Query-tablet) {
+        font-size: $h3-head-size-desktop;
+        line-height: $h3-head-height-desktop;
+        font-weight:$h3-head-weight-desktop;
+        letter-spacing: $h3-head-spacing-desktop;
+    }
+}
+
+
+@mixin body-preset {
+    font-size: $body-size-mobile;
+    line-height: $body-height-mobile;
+    font-weight:$body-weight-mobile;
+    letter-spacing: $body-spacing-mobile;
+
+    @media screen and (min-width:$Query-tablet) {
+        font-size: $body-size-desktop;
+        line-height: $body-height-desktop;
+        font-weight:$body-weight-desktop;
+        letter-spacing: $body-spacing-desktop;
+    }
+}
+
+@mixin body-alt-preset {
+    font-size: $body-size-desktop-alt;
+    line-height: $body-height-desktop-alt;
+    font-weight:$body-weight-desktop-alt;
+    letter-spacing: $body-spacing-desktop-alt;
+}

@@ -1,0 +1,97 @@
+@import 'mixins';
+
+// Colors
+$Query-mobile:375px;
+$Query-tablet:600px;
+$Query-destkop:1200px;
+$Query-content:1440px;
+//  Primary
+$Strong-Cyan: hsl(171, 66%, 44%);
+$Light-Blue: hsl(233, 100%, 69%);
+
+//  Secondary
+$Dark-Grayish-Blue: hsl(210, 10%, 33%);
+$Grayish-Blue: hsl(201, 11%, 66%);
+$White:#ffffff;
+
+//  Typography
+$font-family:'Bai Jamjuree', sans-serif;
+
+//  H1 Header
+$h1-head-size-mobile: 3.2rem;
+$h1-head-height-mobile: 4rem;
+$h1-head-weight-mobile: 600;
+$h1-head-spacing-mobile: -0.64px;
+
+$h1-head-size-desktop: 4.6rem;
+$h1-head-height-desktop: $h1-head-size-desktop;
+$h1-head-weight-desktop: 600;
+$h1-head-spacing-desktop: -0.736px;
+
+//  H2 Header
+$h2-head-size-mobile: 2.8rem;
+$h2-head-height-mobile: 3.5rem;
+$h2-head-weight-mobile: 600;
+$h2-head-spacing-mobile: -0.56px;
+
+$h2-head-size-desktop: 3.7rem;
+$h2-head-height-desktop: $h2-head-size-desktop;
+$h2-head-weight-desktop: 600;
+$h2-head-spacing-desktop: -0.592px;
+
+//  H3 Header
+$h3-head-size-mobile: 2.4rem;
+$h3-head-height-mobile: 2.4rem;
+$h3-head-weight-mobile: 600;
+$h3-head-spacing-mobile: -0.48px;
+
+$h3-head-size-desktop: 2.4rem;
+$h3-head-height-desktop: $h3-head-size-desktop;
+$h3-head-weight-desktop: 600;
+$h3-head-spacing-desktop:-0.48px;
+
+//  Body 
+$body-size-mobile: 1.6rem;
+$body-height-mobile: 2.6rem;
+$body-weight-mobile: 400;
+$body-spacing-mobile: 0.096px;
+
+$body-size-desktop: 1.8rem;
+$body-height-desktop: 3rem;
+$body-weight-desktop: 400;
+$body-spacing-desktop: 0.108px;
+
+$body-size-desktop-alt: 1.6rem;
+$body-height-desktop-alt: 3rem;
+$body-weight-desktop-alt: 400;
+$body-spacing-desktop-alt: 0.096px;
+
+
+//  Reset
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: $font-family;
+    min-width: $Query-mobile;
+}
+
+html {
+    font-size: 1.6rem;
+}
+
+h1 {
+    @include h1-preset;
+}
+
+h2 {
+    @include h2-preset;
+}
+
+h3,h4,h5,h6 {
+    @include h3-preset;
+}
