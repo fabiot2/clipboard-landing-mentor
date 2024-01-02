@@ -2,7 +2,7 @@
 
 // Colors
 $Query-mobile:375px;
-$Query-tablet:600px;
+$Query-tablet:1000px;
 $Query-destkop:1200px;
 $Query-content:1440px;
 //  Primary
@@ -66,6 +66,7 @@ $body-height-desktop-alt: 3rem;
 $body-weight-desktop-alt: 400;
 $body-spacing-desktop-alt: 0.096px;
 
+$padding-mobile: 2.8rem;
 
 //  Reset
 *, *::after, *::before {
@@ -74,14 +75,16 @@ $body-spacing-desktop-alt: 0.096px;
     box-sizing: border-box;
 }
 
-body {
-    font-size: 62.5%;
-    font-family: $font-family;
-    min-width: $Query-mobile;
+html {
+    font-size: 62.5%;   
 }
 
-html {
+body {
     font-size: 1.6rem;
+    min-width: $Query-mobile;
+    width: 100%;
+    font-family: $font-family;
+    text-align: center;
 }
 
 h1 {

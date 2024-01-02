@@ -1,0 +1,16 @@
+@mixin button ($bg) {
+    background-color: $bg;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    height: 5.6rem;
+    border-radius: 2.8rem;
+    color: $White;
+    letter-spacing: 0.504px;
+
+    @media screen and (min-width:$Query-tablet) {
+        width: 22.7rem;
+    }
+
+}
+

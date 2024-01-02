@@ -4,14 +4,16 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-size: 62.5%;
-  font-family: "Bai Jamjuree", sans-serif;
-  min-width: 375px;
 }
 
-html {
+body {
   font-size: 1.6rem;
+  min-width: 375px;
+  width: 100%;
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
 }
 
 h1 {
@@ -20,7 +22,7 @@ h1 {
   font-weight: 600;
   letter-spacing: -0.64px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   h1 {
     font-size: 4.6rem;
     line-height: 4.6rem;
@@ -35,7 +37,7 @@ h2 {
   font-weight: 600;
   letter-spacing: -0.56px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   h2 {
     font-size: 3.7rem;
     line-height: 3.7rem;
@@ -50,7 +52,7 @@ h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: -0.48px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   h3, h4, h5, h6 {
     font-size: 2.4rem;
     line-height: 2.4rem;
@@ -59,6 +61,160 @@ h3, h4, h5, h6 {
   }
 }
 
-body {
-  background-color: #ffffff;
+.section__info, .section__buttons {
+  width: 31.2rem;
+  margin: 0 auto;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 600;
+  letter-spacing: -0.64px;
+}
+@media screen and (min-width: 1000px) {
+  .section__info, .section__buttons {
+    font-size: 4.6rem;
+    line-height: 4.6rem;
+    font-weight: 600;
+    letter-spacing: -0.736px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .section__info, .section__buttons {
+    width: 100%;
+    max-width: 71rem;
+  }
+}
+.section__title {
+  margin-block-end: 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .section__title {
+    margin-block-end: 2.3rem;
+  }
+}
+.section__text {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  letter-spacing: 0.096px;
+  margin-block-end: 4.9rem;
+}
+@media screen and (min-width: 1000px) {
+  .section__text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.108px;
+  }
+}
+.section__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2.2rem;
+}
+@media screen and (min-width: 1000px) {
+  .section__buttons {
+    flex-direction: row;
+    row-gap: 0;
+    column-gap: 1.6rem;
+  }
+}
+.section__buttons .button-green {
+  background-color: hsl(171, 66%, 44%);
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  height: 5.6rem;
+  border-radius: 2.8rem;
+  color: #ffffff;
+  letter-spacing: 0.504px;
+}
+@media screen and (min-width: 1000px) {
+  .section__buttons .button-green {
+    width: 22.7rem;
+  }
+}
+.section__buttons .button-blue {
+  background-color: hsl(233, 100%, 69%);
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  height: 5.6rem;
+  border-radius: 2.8rem;
+  color: #ffffff;
+  letter-spacing: 0.504px;
+}
+@media screen and (min-width: 1000px) {
+  .section__buttons .button-blue {
+    width: 22.7rem;
+  }
+}
+
+.hero {
+  height: 75.8rem;
+  padding-block: 12rem 8.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background: url("../images/bg-header-mobile.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hero__logo {
+  width: 12.6rem;
+  height: 12.6rem;
+  margin-block-end: 6.3rem;
+}
+@media screen and (min-width: 1000px) {
+  .hero__logo {
+    margin-block-end: 5.9rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .hero {
+    background: url("../images/bg-header-desktop.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hero {
+    height: 63.4rem;
+    padding-block-start: 12.8rem;
+  }
+}
+
+.features {
+  padding-block: 7rem 64rem;
+}
+@media screen and (min-width: 1000px) {
+  .features {
+    padding-block: 6.6rem 7.4rem;
+  }
+}
+.features .section__title {
+  margin-block-end: 1.1rem;
+}
+@media screen and (min-width: 1000px) {
+  .features .section__title {
+    margin-block-end: 2.3rem;
+  }
+}
+.features .section__text {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  letter-spacing: 0.096px;
+  margin-block-end: 4.9rem;
+}
+@media screen and (min-width: 1000px) {
+  .features .section__text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.108px;
+  }
 }

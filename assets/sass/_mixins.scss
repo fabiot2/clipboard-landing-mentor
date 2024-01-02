@@ -62,3 +62,16 @@
     font-weight:$body-weight-desktop-alt;
     letter-spacing: $body-spacing-desktop-alt;
 }
+
+@mixin flex($direction:column, $just:center, $align:center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $just;
+    align-items: $align;
+}
+
+// @mixin Query-preset ($query) {
+//     @media screen and (min-width:$query) {
+        
+//     }
+// }

@@ -1,9 +1,120 @@
 @import 'globals';
 @import 'mixins';
 
-@import 'buttons';
-@import 'footer';
+@import './components/buttons';
+@import './components/footer';
 
-body {
-    background-color: $White;
+
+.section {
+   
+    &__info {
+        width: 31.2rem;
+        margin: 0 auto;
+        @include h1-preset;
+
+        @media screen and (min-width:$Query-tablet) {
+            width: 100%;
+            max-width: 71rem;
+        }
+
+    }
+    &__title {
+        margin-block-end: 2rem;
+        @media screen and (min-width:$Query-tablet) {
+            margin-block-end: 2.3rem;
+        }
+    }
+
+    &__text {
+        @include body-preset;
+        margin-block-end: 4.9rem;
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2.2rem;
+
+        @extend .section__info ;
+
+        @media screen and (min-width:$Query-tablet) {
+            flex-direction: row;
+            row-gap: 0;
+            column-gap: 1.6rem;
+        }
+
+        .button-green {
+            @include button ($Strong-Cyan);
+        }
+
+        .button-blue {
+            @include button ($Light-Blue);
+        }
+    }
+}
+
+.hero {
+    height: 75.8rem;
+    padding-block: 12rem 8.8rem;
+    @include flex (column,start,center);
+
+    &__logo {
+        width: 12.6rem;
+        height: 12.6rem;
+        margin-block-end: 6.3rem;
+
+        @media screen and (min-width:$Query-tablet) {
+            margin-block-end: 5.9rem;
+        }
+    }
+
+    background: url('../images/bg-header-mobile.png') {
+        position: top;
+        repeat:no-repeat;
+        size: contain;
+    }
+
+    @media screen and (min-width:700px) {
+        background: url('../images/bg-header-desktop.png') {
+            position: top;
+            repeat:no-repeat;
+            size: contain;
+        }
+    }
+
+    @media screen and (min-width:$Query-tablet) {
+        height: 63.4rem;
+        padding-block-start: 12.8rem;  
+    }
+}
+
+.features {
+    padding-block: 7rem 64rem;
+
+    @media screen and (min-width:$Query-tablet) {
+        padding-block: 6.6rem 7.4rem;
+    }
+
+    // .section__info {
+    //     width: 31.2rem;
+    //     margin: 0 auto;
+    //     @include h2-preset;
+
+        // @media screen and (min-width:$Query-tablet) {
+        //     width: 100%;
+        //     max-width: 71rem;
+        // }
+
+   // }
+    .section__title {
+        margin-block-end: 1.1rem;
+        @media screen and (min-width:$Query-tablet) {
+            margin-block-end: 2.3rem;
+        }
+    }
+
+    .section__text {
+        @include body-preset;
+        margin-block-end: 4.9rem;
+    }
 }
