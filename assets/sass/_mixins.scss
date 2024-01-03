@@ -70,6 +70,15 @@
     align-items: $align;
 }
 
+
+@mixin mobile-width {
+    width: 31.2rem;
+    margin: 0 auto;
+
+    @media screen and (min-width:$Query-tablet) {
+        width: 71rem;
+    }
+}
 // @mixin Query-preset ($query) {
 //     @media screen and (min-width:$query) {
         

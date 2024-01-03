@@ -11,7 +11,8 @@ $Light-Blue: hsl(233, 100%, 69%);
 
 //  Secondary
 $Dark-Grayish-Blue: hsl(210, 10%, 33%);
-$Grayish-Blue: hsl(201, 11%, 66%);
+$Grayish-Blue: hsl(202, 11%, 66%);
+$Grayis-light:#F5F6F8;
 $White:#ffffff;
 
 //  Typography
@@ -97,4 +98,12 @@ h2 {
 
 h3,h4,h5,h6 {
     @include h3-preset;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
