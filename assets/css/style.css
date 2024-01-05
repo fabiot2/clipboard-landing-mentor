@@ -96,6 +96,7 @@ ul {
 @media screen and (min-width: 1000px) {
   .section__title {
     margin-block-end: 2.3rem;
+    color: hsl(210, 10%, 33%);
   }
 }
 .section__text {
@@ -104,7 +105,7 @@ ul {
   font-weight: 400;
   letter-spacing: 0.096px;
   margin-block-end: 4.9rem;
-  color: #CBCDCE;
+  color: hsl(202, 11%, 66%);
 }
 @media screen and (min-width: 1000px) {
   .section__text {
@@ -182,7 +183,7 @@ ul {
 .hero__logo {
   width: 12.6rem;
   height: 12.6rem;
-  margin-block-end: 6.3rem;
+  margin-block-end: 6.4rem;
 }
 @media screen and (min-width: 1000px) {
   .hero__logo {
@@ -205,17 +206,17 @@ ul {
 }
 
 .features {
-  padding-block: 7rem 6.4rem;
+  padding-block: 7.2rem 6.4rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  color: #CBCDCE;
+  color: hsl(202, 11%, 66%);
 }
 @media screen and (min-width: 1000px) {
   .features {
-    padding-block: 6.7rem 7.4rem;
+    padding-block: 6.9rem 7.4rem;
     flex-direction: row;
   }
 }
@@ -230,7 +231,8 @@ ul {
   line-height: 3.5rem;
   font-weight: 600;
   letter-spacing: -0.56px;
-  margin-block-end: 1.1rem;
+  margin-block-end: 1rem;
+  color: hsl(210, 10%, 33%);
 }
 @media screen and (min-width: 1000px) {
   .features .section__title {
@@ -257,8 +259,8 @@ ul {
   line-height: 2.6rem;
   font-weight: 400;
   letter-spacing: 0.096px;
-  color: #CBCDCE;
-  margin-block-end: 6.2rem;
+  color: hsl(202, 11%, 66%);
+  margin-block-end: 6.5rem;
 }
 @media screen and (min-width: 1000px) {
   .features .section__text {
@@ -271,6 +273,11 @@ ul {
     line-height: 3rem;
     font-weight: 400;
     letter-spacing: 0.108px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .features .section__text {
+    margin-block-end: 7.8rem;
   }
 }
 .features .section__media {
@@ -297,11 +304,13 @@ ul {
 }
 @media screen and (min-width: 1000px) {
   .features .section__media {
-    width: 50%;
+    width: 72rem;
+    height: 57.2rem;
     margin: 0;
   }
   .features .section__media img {
-    width: 100%;
+    width: 72rem;
+    height: 57.2rem;
   }
 }
 .features__cards {
@@ -323,13 +332,15 @@ ul {
   .features__cards {
     max-width: 34.2rem;
     margin: 0;
+    margin-block-start: 0.8rem;
     margin-inline-start: 11rem;
     text-align: left;
     gap: 6.5rem;
   }
 }
 .features__title {
-  margin-block-end: 1.6rem;
+  margin-block-end: 1.2rem;
+  color: hsl(210, 10%, 33%);
 }
 .features__text {
   font-size: 1.6rem;
@@ -345,11 +356,45 @@ ul {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1000px) {
+  .access {
+    padding-block-start: 7.9rem;
+  }
+}
+.access .section__title {
+  width: 31.2rem;
+  margin: 0 auto;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  font-weight: 600;
+  letter-spacing: -0.56px;
+  margin-block-end: 1.7rem;
+  color: hsl(210, 10%, 33%);
+}
+@media screen and (min-width: 1000px) {
+  .access .section__title {
+    width: 71rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .access .section__title {
+    font-size: 3.7rem;
+    line-height: 3.7rem;
+    font-weight: 600;
+    letter-spacing: -0.592px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .access .section__title {
+    margin-block-end: 2.6rem;
+  }
+}
 .access .section__media {
   order: 1;
   width: 31.2rem;
   margin: 0 auto;
-  padding-block-end: 9.4rem;
+  margin-block-start: 1.1rem;
+  margin-block-end: 9.4rem;
 }
 @media screen and (min-width: 1000px) {
   .access .section__media {
@@ -363,7 +408,8 @@ ul {
 @media screen and (min-width: 1000px) {
   .access .section__media {
     width: 81rem;
-    padding-block-end: 8.1rem;
+    margin-block-start: 5.1rem;
+    margin-block-end: 8rem;
   }
   .access .section__media img {
     width: 100%;
@@ -419,7 +465,7 @@ ul {
   margin-block-end: 2.4rem;
 }
 .supercharge__text {
-  color: #CBCDCE;
+  color: hsl(202, 11%, 66%);
 }
 
 .partners {
@@ -452,7 +498,7 @@ ul {
   line-height: 2.6rem;
   font-weight: 400;
   letter-spacing: 0.096px;
-  color: #CBCDCE;
+  color: hsl(202, 11%, 66%);
 }
 @media screen and (min-width: 1000px) {
   .clipboard .section__Text {

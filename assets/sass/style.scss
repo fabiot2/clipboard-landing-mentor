@@ -16,13 +16,14 @@
         margin-block-end: 2rem;
         @media screen and (min-width:$Query-tablet) {
             margin-block-end: 2.3rem;
+            color: $Dark-Grayish-Blue;
         }
     }
 
     &__text {
         @include body-preset;
         margin-block-end: 4.9rem;
-        color: $font-color;
+        color: $Grayish-Blue;
     }
     &__buttons {
         display: flex;
@@ -56,7 +57,7 @@
     &__logo {
         width: 12.6rem;
         height: 12.6rem;
-        margin-block-end: 6.3rem;
+        margin-block-end: 6.4rem;
 
         @media screen and (min-width:$Query-tablet) {
             margin-block-end: 5.9rem;
@@ -84,12 +85,12 @@
 }
 
 .features {
-    padding-block: 7rem 6.4rem;
+    padding-block: 7.2rem 6.4rem;
     @include flex(column,start);
     flex-wrap: wrap;
 
     @media screen and (min-width:$Query-tablet) {
-        padding-block: 6.7rem 7.4rem;
+        padding-block: 6.9rem 7.4rem;
         flex-direction: row;
     }
 
@@ -101,7 +102,9 @@
     .section__title {
         @include mobile-width;
         @include h2-preset;
-        margin-block-end: 1.1rem;
+        margin-block-end: 1rem;
+        color: $Dark-Grayish-Blue;
+
         @media screen and (min-width:$Query-tablet) {
             margin-block-end: 2.4rem;
         }
@@ -110,8 +113,13 @@
     .section__text {
         @include mobile-width;
         @include body-preset;
-        color: $font-color;
-        margin-block-end: 6.2rem;
+        color: $Grayish-Blue;
+        margin-block-end: 6.5rem;
+
+
+        @media screen and (min-width:$Query-tablet) {
+            margin-block-end: 7.8rem;
+        }
     }
 
     .section__media {
@@ -126,10 +134,12 @@
         }
 
         @media screen and (min-width:$Query-tablet) {
-            width: 50%;
+            width: 72rem;
+            height: 57.2rem;
             margin: 0;
             img {
-                width: 100%;
+                width: 72rem;
+                height: 57.2rem;
             }
         }
     }
@@ -143,6 +153,7 @@
         @media screen and (min-width:$Query-tablet) {
             max-width:  34.2rem; 
             margin:0;
+            margin-block-start: 0.8rem;
             margin-inline-start: 11rem;
             text-align: left;
             gap: 6.5rem;      
@@ -150,23 +161,43 @@
     }
 
     &__title {
-    margin-block-end: 1.6rem;
+    margin-block-end: 1.2rem;
+    color: $Dark-Grayish-Blue;
     }
 
     &__text {
         @include body-alt-preset;
         }
-        color: $font-color;
+        color: $Grayish-Blue;
 }
 
 .access {
+
+
     padding-block-start: 12rem;
     @include flex;
+
+    @media screen and (min-width:$Query-tablet) {
+        padding-block-start: 7.9rem;
+    }
+
+    .section__title {
+        @include mobile-width;
+        @include h2-preset;
+        margin-block-end: 1.7rem;
+        color: $Dark-Grayish-Blue;
+
+        @media screen and (min-width:$Query-tablet) {
+            margin-block-end: 2.6rem;
+        }
+    }
+
 
     .section__media {
         order:1;
         @include mobile-width;
-        padding-block-end: 9.4rem;
+        margin-block-start: 1.1rem;
+        margin-block-end: 9.4rem;
 
         img {
             width: 100%;
@@ -175,7 +206,8 @@
 
         @media screen and (min-width:$Query-tablet) {
             width: 81rem;
-            padding-block-end: 8.1rem;
+            margin-block-start: 5.1rem;
+            margin-block-end: 8rem;
             img {
                 width: 100%;
             }
@@ -237,7 +269,7 @@
     }
 
     &__text {
-        color: $font-color;
+        color: $Grayish-Blue;
     }
 }
 
@@ -262,7 +294,7 @@
 .clipboard {
     .section__Text {
         @include body-preset;
-        color: $font-color;
+        color: $Grayish-Blue;
     }
 
     .section__buttons {
