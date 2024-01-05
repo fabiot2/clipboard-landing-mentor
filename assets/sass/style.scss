@@ -22,6 +22,7 @@
     &__text {
         @include body-preset;
         margin-block-end: 4.9rem;
+        color: $font-color;
     }
     &__buttons {
         display: flex;
@@ -78,7 +79,7 @@
 
     @media screen and (min-width:$Query-tablet) {
         height: 63.4rem;
-        padding-block-start: 12.8rem;  
+        padding-block-start: 13rem;  
     }
 }
 
@@ -109,6 +110,7 @@
     .section__text {
         @include mobile-width;
         @include body-preset;
+        color: $font-color;
         margin-block-end: 6.2rem;
     }
 
@@ -154,6 +156,7 @@
     &__text {
         @include body-alt-preset;
         }
+        color: $font-color;
 }
 
 .access {
@@ -232,6 +235,10 @@
     &__title {
         margin-block-end: 2.4rem;
     }
+
+    &__text {
+        color: $font-color;
+    }
 }
 
 .partners {
@@ -254,7 +261,8 @@
 
 .clipboard {
     .section__Text {
-        @include body-preset
+        @include body-preset;
+        color: $font-color;
     }
 
     .section__buttons {
