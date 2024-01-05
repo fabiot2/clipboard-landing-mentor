@@ -407,9 +407,10 @@ ul {
 }
 @media screen and (min-width: 1000px) {
   .access .section__media {
-    width: 81rem;
-    margin-block-start: 5.1rem;
-    margin-block-end: 8rem;
+    width: 90.5rem;
+    height: 57.5rem;
+    margin-block-start: 4.1rem;
+    margin-block-end: 7.5rem;
   }
   .access .section__media img {
     width: 100%;
